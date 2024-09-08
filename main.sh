@@ -91,9 +91,9 @@ echo -e "\e[32mloading...\e[0m"
 clear
 clear
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/capcapan/izin/main/ip | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/TspKchn/permission/main/ip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/capcapan/izin/main/ip | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/TspKchn/permission/main/ip | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 username=$(cat /usr/bin/user)
 oid=$(cat /usr/bin/ver)
@@ -112,7 +112,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/capcapan/izin/main/ip | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/TspKchn/permission/main/ip | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -120,7 +120,7 @@ sts="${Error}"
 fi
 echo -e "\e[32mloading...\e[0m"
 clear
-REPO="https://raw.githubusercontent.com/capcapan/autoscript/main/"
+REPO="https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/"
 start=$(date +%s)
 secs_to_human() {
 echo "Installation time : $((${1} / 3600)) hours $(((${1} / 60) % 60)) minute's $((${1} % 60)) seconds"
@@ -280,8 +280,8 @@ fi
 }
 clear
 restart_system() {
-USRSC=$(wget -qO- https://raw.githubusercontent.com/capcapan/izin/main/ip | grep $ipsaya | awk '{print $2}')
-EXPSC=$(wget -qO- https://raw.githubusercontent.com/capcapan/izin/main/ip | grep $ipsaya | awk '{print $3}')
+USRSC=$(wget -qO- https://raw.githubusercontent.com/TspKchn/permission/main/ip | grep $ipsaya | awk '{print $2}')
+EXPSC=$(wget -qO- https://raw.githubusercontent.com/TspKchn/permission/main/ip | grep $ipsaya | awk '{print $3}')
 TIMEZONE=$(printf '%(%H:%M:%S)T')
 TEXT="
 <code>🧿───────────────────🧿</code>
@@ -448,14 +448,14 @@ systemctl enable rc-local
 systemctl start rc-local.service
 echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6
 sed -i '$ i\echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6' /etc/rc.local
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 print_success "Password SSH"
 }
 function udp_mini(){
 clear
 print_install "Memasang Service limit Quota"
-wget https://raw.githubusercontent.com/capcapan/autoscript/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
+wget https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/Fls/limit.sh && chmod +x limit.sh && ./limit.sh
 cd
 wget -q -O /usr/bin/limit-ip "${REPO}Fls/limit-ip"
 chmod +x /usr/bin/*
@@ -653,9 +653,9 @@ print_success "Fail2ban"
 function ins_epro(){
 clear
 print_install "Menginstall ePro WebSocket Proxy"
-wget -O /usr/bin/ws "https://raw.githubusercontent.com/capcapan/autoscript/main/Fls/ws" >/dev/null 2>&1
-wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/capcapan/autoscript/main/Cfg/tun.conf" >/dev/null 2>&1
-wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/capcapan/autoscript/main/Fls/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/Fls/ws" >/dev/null 2>&1
+wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/Cfg/tun.conf" >/dev/null 2>&1
+wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/Fls/ws.service" >/dev/null 2>&1
 chmod +x /etc/systemd/system/ws.service
 chmod +x /usr/bin/ws
 chmod 644 /usr/bin/tun.conf
@@ -696,7 +696,7 @@ mkdir -p /root/udp
 
 # change to time GMT+7
 echo "change to time GMT+7"
-ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+ln -fs /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
 # install udp-custom
 echo downloading udp-custom
@@ -881,8 +881,8 @@ cd
 
 clear
 print_install "Memasang Menu Packet"
-wget https://raw.githubusercontent.com/capcapan/autoscript/main/menu/menu.zip
-wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/capcapan/autoscript/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+wget https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/menu/menu.zip
+wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/Enc/encrypt" ; chmod +x /usr/bin/enc
 unzip menu.zip
 chmod +x menu/*
 mv menu/* /usr/local/sbin
