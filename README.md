@@ -5,7 +5,7 @@
 <pre><code>apt update && apt upgrade -y && sleep 2 && reboot</pre></code>
 
 ### ติดตั้งสคริป >1
-<pre><code>apt install curl -y && apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/capcapan/autoscript/main/main.sh && chmod +x main.sh && ./main.sh
+<pre><code>apt install curl -y && apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/main.sh && chmod +x main.sh && ./main.sh
 </code></pre>
 
 ### ติดตั้งสคริป >2
