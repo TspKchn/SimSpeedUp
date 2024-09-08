@@ -1,8 +1,8 @@
-UP REPO DEBIAN
+สำหรับ DEBIAN
 
 apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
 
-UP REPO UBUNTU
+สำหรับ UBUNTU
 
 apt update && apt upgrade -y && update-grub && sleep 2 && reboot
 
