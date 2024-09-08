@@ -37,8 +37,8 @@ fun_bar() {
 }
 res1() {
 
-    wget https://raw.githubusercontent.com/capcapan/autoscript/main/menu/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/capcapan/autoscript/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+    wget https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/menu/menu.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/Enc/encrypt" ; chmod +x /usr/bin/enc
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
