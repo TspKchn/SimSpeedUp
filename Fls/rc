@@ -1,0 +1,5 @@
+REPO="https://raw.githubusercontent.com/Mhd-Isa/autoscript/main/"
+
+
+
+wget -O /root/.config/rclone/rclone.conf "${REPO}Cfg/rclone.conf"
