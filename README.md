@@ -1,8 +1,8 @@
 
 # สำหรับระบบ Debian
-<pre><code>apt update -y && apt upgrade -y && reboot</code></pre>
+<pre><code>apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot</code></pre>
 # สำหรับระบบ Ubuntu
-<pre><code>apt update && apt upgrade -y && sleep 2 && reboot</pre></code>
+<pre><code>apt update && apt upgrade -y && update-grub && sleep 2 && reboot</pre></code>
 
 ### ติดตั้งสคริป >1
 <pre><code>apt install curl -y && apt install -y && apt update -y && apt upgrade -y && apt install lolcat -y && gem install lolcat && wget -q https://raw.githubusercontent.com/TspKchn/SimSpeedUp/main/main.sh && chmod +x main.sh && ./main.sh
