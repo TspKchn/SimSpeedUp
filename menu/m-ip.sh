@@ -34,11 +34,11 @@ menu
 }
 checking_sc
 clear
-Repo1="https://raw.githubusercontent.com/capcapan/izin/main/"
+Repo1="https://raw.githubusercontent.com/TspKchn/permission/main/"
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
 SELLER=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
 Exp100=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
-data_ip="https://raw.githubusercontent.com/capcapan/izin/main/ip"
+data_ip="https://raw.githubusercontent.com/TspKchn/permission/main/ip"
 d2=$(date -d "$date_list" +"+%s")
 d1=$(date -d "$Exp" +"+%s")
 dayleft=$(( ($d1 - $d2) / 86400 ))
@@ -57,9 +57,9 @@ BGX="\033[42m"
 END='\e[0m'
 AKTIF="VERIFIED"
 TOKEN=$(cat /etc/github/api)
-REPO="https://github.com/capcapan/izin.git"
-EMAIL="capcapangithub@gmail.com"
-USER="capcapan"
+REPO="https://github.com/TspKchn/permission.git"
+EMAIL="thotsaporn.kitchamnan@gmail.com"
+USER="TspKchn"
 # linkinstal= https://justpaste.it/edit/62611736/yu5zlvfdabupd00t
 
 
@@ -127,8 +127,8 @@ URL="https://api.telegram.org/bot$KEY/sendMessage"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/capcapan/izin
-    git push -f https://${TOKEN}@github.com/capcapan/izin.git &> /dev/null
+    git remote add origin https://github.com/TspKchn/permission
+    git push -f https://${TOKEN}@github.com/TspKchn/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     sleep 1
@@ -205,8 +205,8 @@ TIMES="10"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/capcapan/izin
-    git push -f https://${TOKEN}@github.com/capcapan/izin.git &> /dev/null
+    git remote add origin https://github.com/TspKchn/permission
+    git push -f https://${TOKEN}@github.com/TspKchn/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     sleep 1
@@ -266,8 +266,8 @@ TIMES="10"
     git add . &> /dev/null
     git commit -m m &> /dev/null
     git branch -M main &> /dev/null
-    git remote add origin https://github.com/capcapan/izin
-    git push -f https://${TOKEN}@github.com/capcapan/izin.git &> /dev/null
+    git remote add origin https://github.com/TspKchn/permission
+    git push -f https://${TOKEN}@github.com/TspKchn/permission.git &> /dev/null
     rm -rf /root/ipvps
     clear
     sleep 1
