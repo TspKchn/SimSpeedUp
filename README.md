@@ -1,6 +1,6 @@
 # เปลี่ยนรหัส Root
 <pre><code>sudo -i
-  wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
+wget https://raw.githubusercontent.com/kiritosshxd/SSHPLUS/master/senharoot.sh && chmod 777 senharoot.sh && ./senharoot.sh
 </code></pre>
 
 # สำหรับระบบ Debian
